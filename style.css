@@ -32,6 +32,17 @@ p {
   margin-right: auto;
 }
 
+li {
+  font-size: 20px;
+  max-width: 40em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  text-align: left;
+}
+
 .main {
   background-color: #ffebe6;
   text-align: center;
