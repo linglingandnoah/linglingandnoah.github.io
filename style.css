@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 
+html {
+  font-size: 20px;
+}
+
 body {
   font-family: georgia;
   background-color: cadetblue;
   background-image: url('strawberry_thief.jpg');
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -26,14 +29,11 @@ h3 {
 }
 
 p {
-  font-size: 20px;
   max-width: 40em;
-  margin-left: auto;
-  margin-right: auto;
+  overflow-wrap: break-word;
 }
 
 li {
-  font-size: 20px;
   max-width: 40em;
   margin-left: auto;
   margin-right: auto;
@@ -48,10 +48,9 @@ ul {
   text-align: center;
   width: fit-content;
   max-width: 740px;
-  padding: 50px;
+  padding: min(50px, 5%);
   border-radius: 75px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px auto;
 }
 
 .heart-thing {
@@ -62,8 +61,8 @@ ul {
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  column-gap: 30px;
-  row-gap: 40px;
+  column-gap: min(30px, 5%);
+  row-gap: min(40px, 6vw);
 }
 .grid p:nth-child(odd) { /* left */
   text-align: right;
@@ -74,4 +73,5 @@ ul {
 }
 .grid p {
   margin: 0;
+  min-width: 0;
 }
